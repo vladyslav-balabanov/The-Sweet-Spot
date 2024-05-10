@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EADED1">
+
+    <!-- Top bar across the width of the screen -->
+    <View
+            android:id="@+id/header_profile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="#473327"/>
+
+    <!-- Logo on the right, aligned to the bottom with an offset -->
+    <View
+            android:id="@+id/app_logo"
+            android:layout_width="69dp"
+            android:layout_height="73dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="663dp"
+            android:background="@drawable/app_logo"/>
+    <View
+            android:id="@+id/drawer_icon"
+            android:layout_width="35dp"
+            android:layout_height="31dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawer_icon" /> <!-- Change to actual icon or drawable -->
+
+    <!-- Text View for displaying some text -->
+    <TextView
+            android:id="@+id/user_cabinet"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/user_cabinet"
+            android:textAppearance="@style/user_cabinet"
+            android:gravity="center"/>
+
+    <!-- View with an ellipse shape centered in the RelativeLayout -->
+    <View
+            android:id="@+id/avatar_placeholder"
+            android:layout_width="217dp"
+            android:layout_height="202dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/avatar_placeholder"/>
+
+    <!-- Edit icon -->
+    <RelativeLayout
+            android:id="@+id/edit_avatar_icon"
+            android:layout_width="31dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="300dp"
+            android:clipToOutline="true"
+            android:background="@drawable/edit_avatar_icon" />
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:padding="16dp">
+
+        <!-- Name Label TextView -->
+        <TextView
+                android:id="@+id/textNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_name"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:textColor="#757575"/>
+
+        <!-- Name EditText, positioned below the TextView -->
+        <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name"
+                android:layout_below="@id/textNameLabel"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+                android:inputType="textPersonName"/>
+
+        <!-- Email Label TextView -->
+        <TextView
+                android:id="@+id/textEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_email"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="80dp"
+                android:textSize="18sp"
+                android:textColor="#757575"/>
+
+        <!-- Email EditText -->
+        <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:layout_below="@id/editTextName"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"/>
+
+        <!-- Phone Label TextView -->
+        <TextView
+                android:id="@+id/textPhoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_phone"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="160dp"
+                android:textSize="18sp"
+                android:textColor="#757575"/>
+
+        <!-- Phone EditText -->
+        <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone"
+                android:layout_below="@id/editTextEmail"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+                android:inputType="phone"/>
+    </RelativeLayout>
+
+    <!-- Save Button Container -->
+    <RelativeLayout
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginLeft="78dp"
+            android:layout_marginRight="78dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="95dp"
+            android:background="@drawable/button_save">
+
+        <!-- Text for the Save Button -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:gravity="center"/>
+    </RelativeLayout>
+
+    <!-- Leave Button Container -->
+    <RelativeLayout
+            android:id="@+id/main_button"
+            android:layout_width="334dp"
+            android:layout_height="51dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/button_save"
+            android:layout_marginTop="-75dp"
+            android:background="@drawable/button_leave">
+
+        <!-- Text for the Leave Button -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:gravity="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>
