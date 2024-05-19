@@ -11,8 +11,15 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="the_sweet_s">The Sweet Spot</string>
+
     <string name="user_cabinet">Особистий кабінет</string>
     <string name="hint_name">Ім`я</string>
     <string name="hint_email">Пошта</string>
     <string name="hint_phone">Номер телефону</string>
+
+    <string name="sign_up_text">Реєстрація</string>
+    <string name="hint_password">Пароль</string>
+    <string name="show_password">Показати</string>
+    <string name="register_text">Зареєструватися</string>
+    <string name="string_prompt_signup">Вже є акаунт? Увійти</string>
 </resources>
