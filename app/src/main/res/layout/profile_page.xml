@@ -32,7 +32,7 @@
             android:layout_marginLeft="8dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="15dp"
-            android:background="@drawable/drawer_icon" /> <!-- Change to actual icon or drawable -->
+            android:background="@drawable/drawer_icon" />
 
     <!-- Text View for displaying some text -->
     <TextView
@@ -155,13 +155,13 @@
             android:layout_marginRight="78dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="95dp"
-            android:background="@drawable/button_save">
+            android:background="@drawable/button_dark">
 
         <!-- Text for the Save Button -->
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Save"
+                android:text="Зберегти зміни"
                 android:textSize="18sp"
                 android:textColor="#FFFFFF"
                 android:layout_centerInParent="true"
@@ -176,13 +176,13 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/button_save"
             android:layout_marginTop="-75dp"
-            android:background="@drawable/button_leave">
+            android:background="@drawable/button_light">
 
         <!-- Text for the Leave Button -->
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Leave"
+                android:text="Вийти за акаунту"
                 android:textSize="18sp"
                 android:textColor="#FFFFFF"
                 android:layout_centerInParent="true"
